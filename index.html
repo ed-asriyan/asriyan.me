@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr" data-ember-extension="1" lang="en-US">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ed Asriyan</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Ed Asriyan">
+    <meta name="keywords"
+          content="Ed Asriyan, developer, Russia, Moscow, UX, usability, css, html, jQuery, Python, javascript, Go, C, C++, C/C++">
+    <meta name="author" content="Ed Asriyan">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109224221-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109224221-3');
+    </script>
+</head>
+<body>
+
+<!-- дада, спизжено !-->
+<!-- https://jonphillips.ca !-->
+<!-- потом когда-нибудь сделаю сам !-->
+
+<main class="container">
+    <section class="content">
+        <div class="name" googl="true">Ed Asriyan</div>
+        <p class="description">
+            <span class="desktop-hidden" id="desc_mobile"></span>
+            <span class="mobile-hidden" id="desc_desktop"></span>
+        </p>
+        <a class="email" href="mailto:ed-asriyan@protonmail.com" title="Email Ed Asriyan">Contact</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <a class="social gh"
+       href="https://github.com/ed-asriyan"
+       title="Ed Asriyan on GitHub"
+       target="_blank"></a>
+    <a class="social li"
+       href="https://www.linkedin.com/in/ed-asriyan"
+       title="Ed Asriyan on LinkedIn"
+       target="_blank"></a>
+    <a class="social fb"
+       href="https://www.facebook.com/ed.asrian"
+       title="Ed Asriyan on Facebook"
+       target="_blank"></a>
+    <a class="social ig"
+       href="https://www.instagram.com/ed_asriyan"
+       title="Ed Asriyan on Instagram"
+       target="_blank"></a>
+    <a class="social vk"
+       href="https://vk.com/id84279691"
+       title="Ed Asriyan on VK" target="_blank"></a>
+</footer>
+
+<script>
+  var showText = function(target, message, index, interval) {
+    if (index < message.length) {
+      document.querySelector(target).innerHTML += message[index++];
+      setTimeout(function() {
+        showText(target, message, index, interval);
+      }, interval);
+    }
+  };
+  showText('#desc_desktop', 'Web Developer', 0, 80);
+  showText('#desc_mobile', 'Web Developer from Moscow', 0, 80);
+</script>
+
+</body>
+</html>
