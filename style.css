@@ -27,14 +27,35 @@ a {
 }
 
 /***** Styles *****/
-.container {
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+#particles {
     height: 100%;
+    width: 100%;
+}
+
+#particles > div {
+    opacity: 0.36;
+}
+
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #21211f;
+    color: rgba(255, 255, 255, 0.91);
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
@@ -65,8 +86,10 @@ a {
     display: inline-block;
     width: auto;
     font-weight: 300;
-    background: #e22a25;
+    background: #b02824;
     border-radius: 50px;
+    border: solid 1px #b02824;
+    /*border-width: 1px;*/
     padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.25rem;
@@ -76,23 +99,37 @@ a {
 }
 
 .email:hover {
-    background: #21211f;
+    background: #4b4b49;
 }
 
 /***** Footer *****/
 .footer {
     position: absolute;
-    bottom: 35px;
+    bottom: 0;
     text-align: center;
     display: block;
     float: left;
     width: 100%;
 }
 
+.marks {
+    font-size: small;
+    line-height: 35px;
+    color: #737373;
+}
+
+.marks > a {
+    color: #737373;
+}
+
+.marks > a:hover {
+    text-decoration: underline;
+}
+
 .social {
     margin: 0 0.5rem;
-    color: #21211f;
-    font-size: 30px;
+    color: rgba(255, 255, 255, 0.93);
+    font-size: 40px;
     transition: all 0.5s ease;
 
     font-family: 'icomoon' !important;
@@ -102,12 +139,10 @@ a {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .vk:hover {
-    color: #1da1f2;
+    color: #4a76a8;
     transition: all 0.5s ease;
 }
 
@@ -116,7 +151,7 @@ a {
 }
 
 .fb:hover {
-    color: #3b5998;
+    color: #4267b2;
     transition: all 0.5s ease;
 }
 
@@ -125,7 +160,7 @@ a {
 }
 
 .ig:hover {
-    color: #bd0f89;
+    color: #db3670;
     transition: all 0.5s ease;
 }
 
@@ -134,7 +169,7 @@ a {
 }
 
 .li:hover {
-    color: #1a85bc;
+    color: #1887bc;
     transition: all 0.5s ease;
 }
 
@@ -143,7 +178,7 @@ a {
 }
 
 .gh:hover {
-    color: grey;
+    color: #24292e;
     transition: all 0.5s ease;
 }
 
@@ -151,8 +186,16 @@ a {
     content: "\e902";
 }
 
+.marks {
+    color: white;
+    text-decoration: none;
+    align-self: flex-end;
+    font-family: Arial;
+    font-size: 10px;
+}
+
 /***** Responsiveness *****/
-@media all and (min-width: 741px){
+@media all and (min-width: 741px) {
     .desktop-hidden {
         display: none;
     }
@@ -192,7 +235,7 @@ a {
     }
 
     .social {
-        font-size: 28px;
+        font-size: 37px;
     }
 }
 
@@ -207,6 +250,6 @@ a {
     }
 
     .social {
-        font-size: 25px;
+        font-size: 34px;
     }
 }

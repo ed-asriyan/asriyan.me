@@ -29,6 +29,9 @@
 </head>
 <body>
 
+<div class="background">
+    <div id="particles"></div>
+</div>
 <!-- дада, спизжено !-->
 <!-- https://jonphillips.ca !-->
 <!-- потом когда-нибудь сделаю сам !-->
@@ -64,8 +67,15 @@
     <a class="social vk"
        href="https://vk.com/id84279691"
        title="Ed Asriyan on VK" target="_blank"></a>
+
+    <div class="marks">
+        <a href="https://jonphillips.ca">Template</a>,
+        <a href="https://github.com/JulianLaval/canvas-particle-network">Particle network</a>,
+        <a href="https://wall.alphacoders.com/big.php?i=724153">Background</a>
+    </div>
 </footer>
 
+<script src="particles.js"></script>
 <script>
   var showText = function(target, message, index, interval) {
     if (index < message.length) {
@@ -77,6 +87,18 @@
   };
   showText('#desc_desktop', 'Web Developer', 0, 80);
   showText('#desc_mobile', 'Web Developer from Moscow', 0, 80);
+
+  // Initialisation
+
+  var canvasDiv = document.getElementById('particles');
+  var options = {
+    particleColor: '#727272',
+    background: 'background.jpg',
+    interactive: false,
+    speed: 'medium',
+    density: 5000,
+  };
+  var particleCanvas = new ParticleNetwork(canvasDiv, options);
 </script>
 
 </body>
