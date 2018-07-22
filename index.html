@@ -13,19 +13,7 @@
     <meta name="theme-color" content="#2e2d2b"/>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109224221-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-
-      gtag('js', new Date());
-
-      gtag('config', 'UA-109224221-3');
-    </script>
+    <script async src="analytics.js"></script>
 </head>
 <body>
 
@@ -99,6 +87,26 @@
     density: 5000,
   };
   var particleCanvas = new ParticleNetwork(canvasDiv, options);
+
+  var getLabel = function(target) {
+    return target.innerHTML || target.title || target.name || target.query;
+  };
+
+  document.querySelectorAll('a').forEach(function(elem) {
+    elem.addEventListener('mouseenter', function(e) {
+      var label = getLabel(e.target);
+      if (label) {
+        trackAction('mouseenter', label);
+      }
+    });
+
+    elem.addEventListener('click', function(e) {
+      var label = getLabel(e.target);
+      if (label) {
+        trackAction('click', label);
+      }
+    });
+  });
 </script>
 
 </body>
