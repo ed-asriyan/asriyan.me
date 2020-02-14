@@ -47,11 +47,12 @@ a {
 }
 
 .container {
+    margin-top: -75px;
     position: absolute;
     height: 100vh;
     width: 100vw;
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,10 +64,24 @@ a {
     margin: 0;
     text-align: center;
     font-size: 7.35rem;
-    padding: 0;
     letter-spacing: -0.1rem;
     font-style: normal;
     font-weight: 900;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+    background: rgba(86, 80, 78, 0.64);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid 2px #1b1b1b;
+    transition: transform 100ms ease-in-out;
+}
+
+.avatar:hover {
+    transform: rotate(3deg);
 }
 
 .description {
@@ -82,14 +97,13 @@ a {
 
 .email {
     text-align: center;
-    margin: 0 auto;
     display: inline-block;
+    margin-top: 5px;
     width: auto;
     font-weight: 300;
     background: #b02824;
     border-radius: 50px;
     border: solid 1px #b02824;
-    /*border-width: 1px;*/
     padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.25rem;
