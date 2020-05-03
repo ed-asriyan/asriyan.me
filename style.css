@@ -27,7 +27,7 @@ a {
 }
 
 /***** Styles *****/
-.background {
+.background-image {
     position: fixed;
     left: 0;
     top: 0;
@@ -35,6 +35,10 @@ a {
     width: 100vw;
     overflow: hidden;
     background-color: black;
+}
+
+#background canvas {
+    background: none !important;
 }
 
 #particles {
