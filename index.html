@@ -17,8 +17,8 @@
 </head>
 <body>
 
-<div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.83)), url('background.jpg');">
-    <div id="background"></div>
+<div class="background">
+    <div id="particles"></div>
 </div>
 <!-- дада, спизжено !-->
 <!-- https://jonphillips.ca !-->
@@ -60,14 +60,12 @@
     <div class="marks">
         <a href="https://jonphillips.ca">Template</a>,
         <a href="https://icomoon.io/">IcoMoon</a>,
-        <a href="https://brm.io/matter-js/">Matter.js</a>,
+        <a href="https://github.com/JulianLaval/canvas-particle-network">Particles</a>,
         <a href="https://wall.alphacoders.com/big.php?i=724153">Background</a>
     </div>
 </footer>
 
-<script src="https://brm.io/matter-js/build/matter.js"></script>
-<script src="https://brm.io/matter-js/demo/js/lib/matter-wrap.js"></script>
-<script src="matter.js"></script>
+<script src="particles.js"></script>
 <script>
   var showText = function(target, message, index, interval) {
     if (index < message.length) {
@@ -81,6 +79,16 @@
   showText('#desc_mobile', 'Web Developer from Moscow', 0, 80);
 
   // Initialisation
+
+  var canvasDiv = document.getElementById('particles');
+  var options = {
+    particleColor: '#727272',
+    background: 'background.jpg',
+    interactive: false,
+    speed: 'medium',
+    density: 5000,
+  };
+  var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
   var getLabel = function(target) {
     return target.innerHTML || target.title || target.name || target.query;
