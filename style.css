@@ -213,6 +213,10 @@ a {
     .desktop-hidden {
         display: none;
     }
+    
+    #particles > div {
+        transform: scale(1.17) translateX(-6%);
+    }
 }
 
 @media all and (max-width: 740px) {
@@ -266,8 +270,4 @@ a {
     .social {
         font-size: 34px;
     }
-}
-
-#particles > div {
-    transform: scale(1.17) translateX(-6%);
 }
