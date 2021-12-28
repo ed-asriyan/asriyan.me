@@ -28,10 +28,6 @@
     <section class="content">
         <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847" onclick="getBsod()">
         <div class="name" googl="true">Ed Asriyan</div>
-        <p class="description">
-            <span class="desktop-hidden" id="desc_mobile"></span>
-            <span class="mobile-hidden" id="desc_desktop"></span>
-        </p>
         <a class="email" href="mailto:ed@asriyan.me" title="Email Ed Asriyan">Contact</a>
     </section>
 </main>
@@ -66,17 +62,6 @@
 
 <script src="particles.js"></script>
 <script>
-  var showText = function(target, message, index, interval) {
-    if (index < message.length) {
-      document.querySelector(target).innerHTML += message[index++];
-      setTimeout(function() {
-        showText(target, message, index, interval);
-      }, interval);
-    }
-  };
-  showText('#desc_desktop', 'Web Developer', 0, 80);
-  showText('#desc_mobile', 'Web Developer from Moscow', 0, 80);
-
   // Initialisation
 
   var canvasDiv = document.getElementById('particles');
