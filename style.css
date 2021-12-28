@@ -267,3 +267,7 @@ a {
         font-size: 34px;
     }
 }
+
+#particles > div {
+    transform: scale(1.17) translateX(-7%);
+}
