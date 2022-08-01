@@ -1,13 +1,14 @@
 /***** Web Fonts *****/
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?za1o0');
-    src: url('fonts/icomoon.eot?za1o0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?za1o0') format('truetype'),
-    url('fonts/icomoon.woff?za1o0') format('woff'),
-    url('fonts/icomoon.svg?za1o0#icomoon') format('svg');
+    src:  url('fonts/icomoon.eot?aup5j8');
+    src:  url('fonts/icomoon.eot?aup5j8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?aup5j8') format('truetype'),
+    url('fonts/icomoon.woff?aup5j8') format('woff'),
+    url('fonts/icomoon.svg?aup5j8#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
 }
 
 /***** General Styles *****/
@@ -155,49 +156,64 @@ a {
     line-height: 1;
 }
 
-.vk:hover {
-    color: #4a76a8;
+.social:hover {
     transition: all 0.5s ease;
+}
+
+.telegram:hover {
+    color: #179cde;
+}
+
+.telegram:before {
+    content: "\e902";
+}
+
+.vk:hover {
+    color: #0077ff;
 }
 
 .vk:before {
-    content: "\e903";
-}
-
-.fb:hover {
-    color: #4267b2;
-    transition: all 0.5s ease;
-}
-
-.fb:before {
-    content: "\e900";
-}
-
-.ig:hover {
-    color: #db3670;
-    transition: all 0.5s ease;
-}
-
-.ig:before {
-    content: "\e904";
-}
-
-.li:hover {
-    color: #1887bc;
-    transition: all 0.5s ease;
-}
-
-.li:before {
     content: "\e901";
 }
 
-.gh:hover {
-    color: #24292e;
-    transition: all 0.5s ease;
+.facebook:hover {
+    color: #1877f2;
 }
 
-.gh:before {
-    content: "\e902";
+.facebook:before {
+    content: "\e905";
+}
+
+.instagram:hover {
+    color: #db3670;
+}
+
+.instagram:before {
+    content: "\e904";
+}
+
+.linkedin:hover {
+    color: rgb(41, 119, 201);
+}
+
+.linkedin:before {
+    content: "\e903";
+}
+
+.github:hover {
+    color: #24292e;
+}
+
+.github:before {
+    content: "\e900";
+}
+
+.spotify:hover {
+    color: rgb(30, 215, 96);
+}
+
+.spotify:before {
+    content: "\e906";
 }
 
 .marks {
