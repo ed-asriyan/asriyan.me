@@ -1,0 +1,25 @@
+/***** General Styles *****/
+html, body {
+    font-size: 16px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media all and (max-width: 740px) {
+    html, body {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    html, body {
+        font-size: 9px;
+    }
+}
