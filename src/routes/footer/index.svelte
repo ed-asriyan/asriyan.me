@@ -30,24 +30,19 @@
     }
 
     .marks {
-        font-size: small;
-        line-height: 35px;
-        color: #737373;
-    }
-
-    .marks > a {
-        color: #737373;
-    }
-
-    .marks > a:hover {
-        text-decoration: underline;
-    }
-
-    .marks {
-        color: white;
         text-decoration: none;
         align-self: flex-end;
         font-family: Arial;
         font-size: 10px;
+        line-height: 35px;
+        color: #737373;
+
+        & > a {
+            color: #737373;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 </style>
