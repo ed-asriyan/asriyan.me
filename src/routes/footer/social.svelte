@@ -19,10 +19,7 @@
 <style>
     @font-face {
         font-family: 'icomoon';
-        src: url('/fonts/icomoon.eot?aup5j8#iefix') format('embedded-opentype'),
-        url('/fonts/icomoon.ttf?aup5j8') format('truetype'),
-        url('/fonts/icomoon.woff?aup5j8') format('woff'),
-        url('/fonts/icomoon.svg?aup5j8#icomoon') format('svg');
+        src: url('/icomoon.ttf') format('truetype');
     }
 
     .social {

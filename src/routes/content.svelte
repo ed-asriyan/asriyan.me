@@ -4,7 +4,7 @@
 
 <main class="container">
     <section class="content">
-        <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847">
+        <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847" crossorigin="anonymous">
         <div class="name">Ed Asriyan</div>
         <a class="email" href="mailto:contact.website@asriyan.me" title="Email Ed Asriyan">Contact</a>
     </section>
