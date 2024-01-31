@@ -9,10 +9,10 @@
     setTimeout(() => showContent = true, 200);
 
     let showFooter = false;
-    setTimeout(() => showFooter = true, 2000);
+    setTimeout(() => showFooter = true, 1200);
 
     let showBackground = false;
-    setTimeout(() => showBackground = true, 5000);
+    setTimeout(() => showBackground = true, 2500);
 </script>
 
 {#if showBackground}
