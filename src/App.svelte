@@ -1,6 +1,5 @@
 <script lang="ts">
     import {fade, fly} from 'svelte/transition';
-
     import Background from './background.svelte';
     import Content from './content.svelte';
     import Footer from './footer/index.svelte';
