@@ -1,6 +1,7 @@
+import { mount } from 'svelte';
 import Root from './App.svelte';
 import './global.css';
 
-export default new Root({
+export default mount(Root, {
     target: document.getElementById('app'),
 });

@@ -1,20 +1,24 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
     type Icon = "github" | "vk" | "linkedin";
 </script>
 
 <script lang="ts">
-    export let icon: Icon;
-    export let href: string;
-    export let name: string;
+   interface Props {
+      icon: Icon;
+      href: string;
+      name: string;
+   }
 
-    $: title = `Ed Asriyan at ${name}`;
-    $: classes = ['social', icon].join(' ');
+   let { icon, href, name }: Props = $props();
+
+    let title = $derived(`Ed Asriyan at ${name}`);
+    let classes = $derived(['social', icon].join(' '));
 </script>
 
 <a class={classes}
    href={href}
    title={title}
-   target="_blank"/>
+   target="_blank"></a>
 
 <style>
     @font-face {

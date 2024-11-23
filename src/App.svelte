@@ -4,13 +4,13 @@
     import Content from './content.svelte';
     import Footer from './footer/index.svelte';
 
-    let showContent = false;
+    let showContent = $state(false);
     setTimeout(() => showContent = true, 200);
 
-    let showFooter = false;
+    let showFooter = $state(false);
     setTimeout(() => showFooter = true, 1200);
 
-    let showBackground = false;
+    let showBackground = $state(false);
     setTimeout(() => showBackground = true, 2500);
 </script>
 

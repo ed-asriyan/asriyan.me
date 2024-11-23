@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import ParticleNetwork from 'canvas-particle-network/particle-network';
 
-    let canvas: Element;
+    let canvas: Element = $state();
 
     onMount(() => {
         new ParticleNetwork(
