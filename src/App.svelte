@@ -3,6 +3,7 @@
     import Background from './background.svelte';
     import Content from './content.svelte';
     import Footer from './footer/index.svelte';
+    import Unbound from './unbound.svelte';
 
     let showContent = $state(false);
     setTimeout(() => showContent = true, 200);
@@ -32,6 +33,16 @@
     </div>
 {/if}
 
+<div class="unbound">
+    <Unbound/>
+</div>
+
 <style global>
     @import "global.css";
+
+    @media all and (max-width: 741px) {
+        .unbound {
+            display: none;
+        }
+    }
 </style>
