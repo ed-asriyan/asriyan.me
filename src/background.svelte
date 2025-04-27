@@ -1,34 +1,42 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import ParticleNetwork from 'canvas-particle-network/particle-network';
+    import Spheres2Background from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.8/build/backgrounds/spheres2.cdn.min.js';
 
     let canvas: Element = $state();
 
+    const getRandomColors = () => {
+        return [
+            Math.floor(Math.random() * 0xffffff),
+            Math.floor(Math.random() * 0xffffff),
+            Math.floor(Math.random() * 0xffffff),
+        ];
+    };
+
+    let bg: any = null;
+
     onMount(() => {
-        new ParticleNetwork(
-            canvas,
-            {
-                particleColor: '#9f9f9f',
-                background: 'transparent',
-                interactive: false,
-                speed: 'medium',
-                density: 5000,
-            },
-        );
+        bg = Spheres2Background(canvas, {
+            count: window.innerWidth < 768 ? 100 : 320,
+            colors: getRandomColors(),
+            minSize: 0.5,
+            maxSize: 1
+        });
     });
+
+    const changeColors = () => {
+        bg?.spheres.setColors(getRandomColors())
+        bg?.spheres.light1.color.set(getRandomColors()[0]);
+    };
+
 </script>
 
+<svelte:window onclick={changeColors} />
+
 <div class="background">
-    <div class="particles" bind:this={canvas}></div>
+    <canvas bind:this={canvas}></canvas>
 </div>
 
 <style>
-    @media all and (min-width: 741px) {
-        .background {
-            transform: scale(1.17) translateX(-6%);
-        }
-    }
-
     .background {
         position: fixed;
         left: 0;
@@ -36,14 +44,6 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        background-image: url('/background.gif');
-        background-size: cover;
-        background-position: center center;
-        opacity: 0.55;
-    }
-
-    .particles {
-        height: 100%;
-        width: 100%;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5) 200%);
     }
 </style>

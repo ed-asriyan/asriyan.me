@@ -11,10 +11,9 @@
     <Social name="Spotify" icon="spotify" href="https://open.spotify.com/user/31ghpn3sdqez7c6mbsi556bf5ovy?si=fd7a81b6514e4a61"/>
 
     <div class="marks">
-        <a href="https://jonphillips.ca">Template</a>,
-        <a href="https://icomoon.io/">IcoMoon</a>,
-        <a href="https://github.com/JulianLaval/canvas-particle-network">Particles</a>,
-        <a href="https://lentach.media">Background</a>
+        <a href="https://jonphillips.ca" target="_blank">Template</a>,
+        <a href="https://icomoon.io/" target="_blank">IcoMoon</a>,
+        <a href="https://threejs.org" target="_blank">Background Spheres</a>
     </div>
 </footer>
 

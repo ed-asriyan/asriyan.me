@@ -5,7 +5,7 @@
 <main class="container">
     <section class="content">
         <img class="avatar" src="https://avatars0.githubusercontent.com/u/7848847" crossorigin="anonymous">
-        <div class="name">Ed Asriyan</div>
+        <h1 class="name">Ed Asriyan</h1>
         <a class="email" href="mailto:contact.website@asriyan.me" title="Email Ed Asriyan">Contact</a>
     </section>
 </main>
@@ -20,12 +20,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgba(255, 255, 255, 0.91);
+        user-select: none;
         font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    }
-
-    .email {
-        text-decoration: none;
     }
 
     .name {
@@ -34,7 +30,11 @@
         font-size: 7.35rem;
         letter-spacing: -0.1rem;
         font-style: normal;
-        font-weight: 900;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+        text-shadow: 15px 15px 25px white;
     }
 
     .avatar {
@@ -46,6 +46,8 @@
         border-radius: 50%;
         border: solid 2px #1b1b1b;
         transition: transform 100ms ease-in-out;
+        text-decoration: none;
+        box-shadow: 5px 5px 25px white;
 
         &:hover {
             transform: rotate(3deg);
@@ -57,19 +59,22 @@
         display: inline-block;
         margin-top: 5px;
         width: auto;
-        font-weight: 300;
-        background: #b02824;
+        font-weight: 500;
+        background: rgba(86, 80, 78, 0.2);
+        backdrop-filter: blur(8px);
         border-radius: 50px;
-        border: solid 1px #b02824;
+        border: solid 1px black;
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
         letter-spacing: 0.25rem;
         text-transform: uppercase;
-        color: #fff;
+        color: black;
         transition: all 0.5s ease;
+        text-decoration: none;
 
         &:hover {
-            background: #4b4b49;
+            background-color: black;
+            color: white;
         }
     }
 
