@@ -28,7 +28,7 @@
 
     .social {
         margin: 0 0.5rem;
-        color: rgba(255, 255, 255, 0.93);
+        color: black;
         font-size: 40px;
         transition: all 0.5s ease;
 

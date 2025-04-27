@@ -4,34 +4,17 @@
     import Content from './content.svelte';
     import Footer from './footer/index.svelte';
     import Unbound from './unbound.svelte';
-
-    let showContent = $state(false);
-    setTimeout(() => showContent = true, 200);
-
-    let showFooter = $state(false);
-    setTimeout(() => showFooter = true, 1200);
-
-    let showBackground = $state(false);
-    setTimeout(() => showBackground = true, 2500);
 </script>
 
-{#if showBackground}
-    <div transition:fade>
-        <Background/>
-    </div>
-{/if}
+<Background/>
 
-{#if showContent}
-    <div transition:fly={{ y: 50, duration: 1000 }}>
-        <Content/>
-    </div>
-{/if}
+<div transition:fly={{ y: 50, duration: 1000 }}>
+    <Content/>
+</div>
 
-{#if showFooter}
-    <div transition:fade={{ duration: 1000 }}>
-        <Footer/>
-    </div>
-{/if}
+<div transition:fade={{ duration: 1000 }}>
+    <Footer/>
+</div>
 
 <div class="unbound">
     <Unbound/>
