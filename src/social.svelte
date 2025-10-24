@@ -82,6 +82,9 @@
         border: none;
         padding: 0;
         margin: 0;
+        box-shadow: 0px 0px 70px white;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
     }
 
     .social {
