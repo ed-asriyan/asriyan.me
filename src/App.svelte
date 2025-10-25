@@ -16,16 +16,4 @@
     <Footer/>
 </div>
 
-<div class="unbound">
-    <Unbound/>
-</div>
-
-<style global>
-    @import "global.css";
-
-    @media all and (max-width: 741px) {
-        .unbound {
-            display: none;
-        }
-    }
-</style>
+<Unbound/>
