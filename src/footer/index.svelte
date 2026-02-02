@@ -1,8 +1,7 @@
 <footer class="footer">
     <div class="marks">
         <a href="https://jonphillips.ca" target="_blank">Template</a>,
-        <a href="https://fontello.com/" target="_blank">Fontello</a>,
-        <a href="https://threejs.org" target="_blank">Background Spheres</a>
+        <a href="https://fontello.com/" target="_blank">Fontello</a>
     </div>
 </footer>
 

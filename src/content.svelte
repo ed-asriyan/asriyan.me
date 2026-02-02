@@ -47,7 +47,6 @@
         color: black;
         text-transform: uppercase;
         letter-spacing: 0.25rem;
-        text-shadow: 15px 15px 25px white;
     }
 
     .avatar {

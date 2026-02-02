@@ -1,21 +1,7 @@
 <script lang="ts">
-    import Balls from './balls.svelte';
-    import Fluid from './fluid.svelte';
-
-    const components = [
-        Balls,
-        Fluid,
-    ];
-
-    const getRandomComponent = () => {
-        return components[Math.floor(Math.random() * components.length)];
-    };
-
-    const component = getRandomComponent();
-</script>``
+</script>
 
 <div class="background">
-    <svelte:component this={component} />
 </div>
 
 <style>
