@@ -1,35 +1,20 @@
 <footer class="footer">
-    <div class="marks">
-        <a href="https://jonphillips.ca" target="_blank">Template</a>,
-        <a href="https://fontello.com/" target="_blank">Fontello</a>
-    </div>
+    <p>© {new Date().getFullYear()} Ed Asriyan. All rights reserved.</p>
 </footer>
 
 <style>
-    /***** Footer *****/
     .footer {
-        position: absolute;
-        bottom: 0;
+        padding: 2rem 0;
         text-align: center;
-        display: block;
-        float: left;
+        font-size: 0.875rem;
+        color: #6b7280;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
         width: 100%;
     }
-
-    .marks {
-        text-decoration: none;
-        align-self: flex-end;
-        font-family: Arial;
-        font-size: 10px;
-        line-height: 35px;
-        color: #737373;
-
-        & > a {
-            color: #737373;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+    
+    p {
+        margin: 0;
     }
 </style>
