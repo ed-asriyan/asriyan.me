@@ -1,20 +1,18 @@
-import { linear } from "svelte/easing";
-
 export const profile = {
     name: "Ed Asriyan",
-    title: "Director of Engineering at Parallels & Founder of AIGid.",
-    subtitle: "Building scalable systems in Seattle, WA.",
+    title: "Director of Engineering at Parallels • Founder at AIGid",
+    subtitle: "Building scalable systems from Seattle, WA.",
     avatar: "https://github.com/ed-asriyan.png",
     email: "contact.website@asriyan.me"
 };
 
 export const about = {
-    bio: "I am an IT enthusiast and engineering leader based in Seattle, WA. With a deep background in C++, Python, Rust, and JavaScript, I specialize in building robust, high-performance systems. Whether it's managing engineering teams at Parallels or founding new ventures like AIGid, I am driven by technical challenges and innovation.",
+    bio: "I build and lead high-performing teams, and design scalable systems to solve complex problems. From enterprise infrastructure to early-stage ventures, I focus on technical excellence and measurable, real-world impact.",
     location: "Seattle, WA",
-    languages: "English / Russian",
-    availability: "Open for collaboration",
+    languages: "English, Russian",
+    availability: "Open to collaboration",
     gpg: "E075 E24B 56E0 F769 4740 FAED A70D 43C1 D9AB 8D96",
-    highlights: ["Seattle, WA", "C++, Python, Rust, and JavaScript"]
+    highlights: ["Seattle, WA", "C++, Python, Rust, JavaScript"],
 };
 
 export const socialLinks = [
@@ -24,7 +22,7 @@ export const socialLinks = [
     { name: "GitHub", icon: "github", href: "https://github.com/ed-asriyan" },
     { name: "Facebook", icon: "facebook", href: "https://www.facebook.com/ed.asrian" },
     { name: "Instagram", icon: "instagram", href: "https://www.instagram.com/ed_asriyan" },
-    { name: "VK", icon: "vk", href: "https://vk.com/id84279691", color: "#0077FF" },
+    { name: "VK", icon: "vk", href: "https://vk.com/id84279691" },
     { name: "Email", icon: "email", href: "mailto:contact.website@asriyan.me" }
 ];
 
@@ -34,12 +32,12 @@ export const experience = [
         companyLink: "https://aigid.io",
         position: "Founder",
         period: "2026 - Present",
-        description: "The QR-powered AI chatbot that acts as a personal sommelier for every guest, boosting your sales and delighting your customers.",
+        description: "The QR-powered AI chatbot that works like a personal sommelier for every guest—boosting sales and improving the customer experience.",
         icon: "🚀",
         tags: ["Startup"],
         links: [
             { text: "Website", link: "https://aigid.io" },
-            { text: "Demo", link: "https://go.aigid.io/7pdmAT" }
+            { text: "Demo", link: "https://go.aigid.io/7pdmAT" },
         ],
     },
     {
@@ -47,7 +45,7 @@ export const experience = [
         companyLink: "https://parallels.com",
         position: "Director of Engineering",
         period: "2025 - Present",
-        description: "Directing engineering efforts for cloud infrastructure of world-class virtualization software. Managing diverse teams, overseeing release cycles, and driving technical excellence.",
+        description: "Leading cloud infrastructure engineering for Parallels. Managing teams, owning release execution, and raising the bar on reliability, performance, and engineering excellence.",
         icon: "💼",
         tags: ["Employment"],
     },
@@ -61,6 +59,7 @@ export const experience = [
         tags: ["Projects"],
         links: [
             { text: "GitHub", link: "https://github.com/ed-asriyan/simplex-directory-frontend" },
+            { text: "Website", link: "https://simplex-directory.asriyan.me" }
         ],
     },
     {
@@ -68,12 +67,12 @@ export const experience = [
         companyLink: "https://watchtogether.online",
         position: "Author & Developer",
         period: "2024 - Present",
-        description: "A seamless 'watch party' experience that unifies YouTube, HLS, and local media sources into a single synchronized room using Svelte. By integrating WebTorrent, the platform bypasses central servers to allow high-quality, serverless P2P video streaming between users.",
+        description: "A seamless watch-party experience for YouTube, HLS, and local media—synchronized in real time with Svelte. Uses WebTorrent to enable high-quality, serverless P2P streaming between users.",
         icon: "🚀",
         tags: ["Projects"],
         links: [
             { text: "GitHub", link: "https://github.com/ed-asriyan/watchtogether.online" },
-            { text: "Demo", link: "https://watchtogether.online" }
+            { text: "Website", link: "https://watchtogether.online" }
         ]
     },
     {
@@ -81,16 +80,29 @@ export const experience = [
         companyLink: "https://web.archive.org/web/20251122063413/https://www.alludo.com/en",
         position: "Senior Engineering Manager",
         period: "2022 - 2025",
-        description: "Led multiple engineering teams in developing and maintaining Parallels' web development, focusing on cloud services & infrastructure. Oversaw project management, code quality, and team growth.",
+        description: "Led multiple engineering teams building and maintaining Parallels web products, with a focus on cloud services and infrastructure. Owned delivery, quality, and team growth across multiple release cycles.",
         icon: "💼",
         tags: ["Employment"],
+    },
+    {
+        company: "Telegram Sticker to WhatsApp Transfer",
+        companyLink: "https://t.me/tgtowabot",
+        position: "Owner & Developer",
+        period: "2021 - Present",
+        description: "26k+ MAU. After releasing lottie-converter, I noticed strong demand for sticker conversion workflows. I built a bot that automates transfers from Telegram to WhatsApp and grew adoption quickly.",
+        icon: "🤖",
+        tags: ["Projects"],
+        links: [
+            { text: "Telegram", link: "https://t.me/tgtowabot" }
+        ]
+
     },
     {
         company: "lottie-converter",
         companyLink: null,
         position: "Author & Developer",
         period: "2020 - Present",
-        description: "⭐ 1k+ stars on GitHub. A CLI tool and library for converting Lottie animations to various formats including GIF, WEBP, and video. Built with C++ for performance and reliability.",
+        description: "1k+ GitHub stars. A CLI tool and library for converting Lottie animations into GIF, WEBP, and video. Built in C++ for performance and reliability.",
         icon: "🚀",
         tags: ["Projects"],
         links: [
@@ -103,7 +115,7 @@ export const experience = [
         companyLink: "https://parallels.com",
         position: "Software Developer",
         period: "2019 - 2022",
-        description: "Contributed to the development of Parallels MyAccount and Parallels product APIs, focusing on performance optimization, feature development, and cross-platform integrations.",
+        description: "Built Parallels MyAccount and product APIs, focusing on performance, feature delivery, and cross-platform integrations.",
         icon: "💼",
         tags: ["Employment"],
     },
@@ -112,7 +124,7 @@ export const experience = [
         companyLink: "https://M4MController.github.io/m4m-web-prototype",
         position: "Co-Founder & CTO",
         period: "2018 - 2020",
-        description: "Startup that died before it found product-market fit.",
+        description: "An early-stage startup that shut down before reaching product–market fit.",
         icon: "🚀",
         tags: ["Startup", "Projects"],
         links: [
@@ -134,7 +146,7 @@ export const experience = [
         companyLink: "https://park.vk.company",
         position: "Certificate Program in High-Load Systems",
         period: "2016 - 2018",
-        description: "Completed VK’s (Mail.ru) rigorous two-year program focused on high-load system architecture and industrial software engineering.",
+        description: "Completed VK’s intensive two-year program focused on high-load architecture and industrial software engineering.",
         icon: "🎓",
         tags: ["Education"],
         links: [
@@ -172,28 +184,28 @@ export const projects = [
     {
         name: "WatchTogether.online",
         role: "Author & Developer",
-        description: "A seamless 'watch party' experience that unifies YouTube, HLS, and local media sources into a single synchronized room using Svelte. By integrating WebTorrent, the platform bypasses central servers to allow high-quality, serverless P2P video streaming between users.",
+        description: "A seamless watch-party experience for YouTube, HLS, and local media—synchronized in real time with Svelte. Uses WebTorrent to enable high-quality, serverless P2P streaming between users.",
         tags: ["C++", "Rust", "Networking", "System Design"],
-        link: "https://github.com/ed-asriyan"
+        link: "https://watchtogether.online"
     },
     {
         name: "AIGid",
         role: "Founder",
-        description: "The QR-powered AI chatbot that acts as a personal sommelier for every guest, boosting your sales and delighting your customers.",
+        description: "The QR-powered AI chatbot that works like a personal sommelier for every guest—boosting sales and improving the customer experience.",
         tags: ["AI", "PMF", "Business"],
         link: "https://aigid.io"
     },
     {
         name: "lottie-converter",
         role: "Author & Developer",
-        description: "⭐ 1k+ stars on GitHub. A CLI tool and library for converting Lottie animations to various formats including GIF, WEBP, and video. Built with C++ for performance and reliability.",
+        description: "⭐ 1k+ GitHub stars. A CLI tool and library for converting Lottie animations into GIF, WEBP, and video. Built in C++ for performance and reliability.",
         tags: ["C++", "Rust", "Networking", "System Design"],
-        link: "https://github.com/ed-asriyan"
+        link: "https://github.com/ed-asriyan/lottie-converter"
     },
     {
         name: "M4M",
         role: "Author & Developer",
-        description: "Various contributions to C++ and Rust ecosystems, focusing on memory safety and network protocols.",
+        description: "An early-stage IoT/embedded project with contributions across C++ and Rust.",
         tags: ["IoT", "Python", "xbee", "Embedded"],
         link: "https://github.com/M4MController"
     },
@@ -203,5 +215,12 @@ export const projects = [
         description: "An open-source catalog of SimpleX servers and bots.",
         tags: ["Svelte", "TypeScript", "Rust"],
         link: "https://simplex-directory.asriyan.me",
-    }
+    },
+    { 
+        name: "Telegram Sticker to WhatsApp Transfer",
+        role: "Owner & Developer",
+        description: "📈 26k+ MAU. A bot that helps users transfer stickers from Telegram to WhatsApp with minimal effort.",
+        tags: ["Nodejs", "TypeScript", "C++", "Docker", "Audience"],
+        link: "https://t.me/tgtowabot",
+    },
 ];
