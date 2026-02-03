@@ -155,14 +155,14 @@
     
     .timeline {
         position: relative;
-        max-width: 1100px;
+        max-width: 700px;
         margin: 4rem auto 0;
     }
     
     .timeline::before {
         content: '';
         position: absolute;
-        left: 50%;
+        left: 2rem;
         transform: translateX(-50%);
         width: 1px;
         height: 100%;
@@ -177,15 +177,18 @@
     
     .desktop-layout {
         display: flex;
-        align-items: center;
         justify-content: space-between;
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 4rem;
     }
     
     .left {
-        width: 45%;
-        text-align: right;
         padding-right: 3rem;
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
     }
     
     .left h3 {
@@ -232,7 +235,7 @@
     
     .center-dot {
         position: absolute;
-        left: 50%;
+        left: 2rem;
         transform: translateX(-50%);
         width: 2rem;
         height: 2rem;
@@ -258,8 +261,8 @@
     }
     
     .right {
-        width: 45%;
-        padding-left: 3rem;
+        width: 100%;
+        padding-left: 0;
     }
     
     .right h4 {
