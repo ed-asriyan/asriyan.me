@@ -1,7 +1,6 @@
 <script lang="ts">
     import {fade, fly} from 'svelte/transition';
     import Background from './background/index.svelte';
-    import Navbar from './Navbar.svelte';
     import Hero from './Hero.svelte';
     import Experience from './Experience.svelte';
     import Projects from './Projects.svelte';
@@ -13,7 +12,6 @@
 </script>
 
 <Background/>
-<Navbar/>
 
 <main class="main-content">
     <div transition:fly={{ y: 50, duration: 1000 }}>
