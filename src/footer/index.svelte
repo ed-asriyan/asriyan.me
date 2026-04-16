@@ -1,5 +1,6 @@
 <footer class="footer">
-    <p>© {new Date().getFullYear()} Ed Asriyan. All rights reserved.</p>
+    <p class="copyright">© {new Date().getFullYear()} Ed Asriyan. All rights reserved.</p>
+    <p class="cookie-notice">This site uses cookies — a fundamental part of HTTP. Don't like it? You, and only you, are responsible for blocking them in your browser settings.</p>
 </footer>
 
 <style>
@@ -16,5 +17,15 @@
     
     p {
         margin: 0;
+    }
+
+    .cookie-notice {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: #4b5563;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
     }
 </style>
