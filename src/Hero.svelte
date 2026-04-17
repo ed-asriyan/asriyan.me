@@ -84,7 +84,7 @@
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
-        border: 2px solid rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--border-color);
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         object-fit: cover;
         transition: all 0.5s;
@@ -95,14 +95,14 @@
         line-height: 1;
         font-weight: 900;
         letter-spacing: -0.025em;
-        color: white;
+        color: var(--heading-color);
         margin: 0 0 1rem 0;
         text-transform: uppercase;
     }
 
     .summary {
         font-size: 1.125rem;
-        color: #9ca3af;
+        color: var(--text-muted);
         font-weight: 300;
         line-height: 1.625;
         margin: 0 0 2rem 0;
@@ -127,7 +127,7 @@
     .mouse {
         width: 20px;
         height: 32px;
-        border: 2px solid rgba(255, 255, 255, 0.2);
+        border: 2px solid rgba(128, 128, 128, 0.5);
         border-radius: 20px;
         position: relative;
     }
@@ -135,7 +135,7 @@
     .wheel {
         width: 2px;
         height: 8px;
-        background: rgba(255, 255, 255, 0.5);
+        background: var(--text-color);
         position: absolute;
         top: 6px;
         left: 50%;

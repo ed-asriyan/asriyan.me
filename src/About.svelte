@@ -66,33 +66,33 @@
         letter-spacing: 0.5em;
         margin-bottom: 4rem;
         font-size: 1.875rem;
-        color: white;
+        color: var(--heading-color);
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--border-color);
         max-width: 32rem;
         margin-left: auto;
         margin-right: auto;
     }
     
     .card {
-        background: rgba(255, 255, 255, 0.05);
+        background: var(--card-bg);
         backdrop-filter: blur(4px);
         border-radius: 1rem;
         padding: 3rem;
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-light);
         max-width: 48rem;
         margin: 0 auto;
     }
     
     .bio {
-        color: #d1d5db;
+        color: var(--text-color);
         line-height: 1.625;
         font-size: 1.125rem;
         margin: 0 0 2rem 0;
     }
     
     .highlight {
-        color: white;
+        color: var(--heading-color);
         font-weight: 600;
     }
     
@@ -108,7 +108,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: #9ca3af;
+        color: var(--text-muted);
     }
     
     .info-item svg {
@@ -123,7 +123,7 @@
     }
     
     .location-link:hover {
-        color: white;
+        color: var(--heading-color);
         text-decoration: underline;
     }
     
@@ -147,12 +147,12 @@
     .gpg {
         margin-top: 2rem;
         padding-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid var(--border-color);
     }
     
     .gpg-text {
         font-size: 0.75rem;
-        color: #6b7280;
+        color: var(--date-color);
         font-family: monospace;
         word-break: break-all;
         margin: 0;

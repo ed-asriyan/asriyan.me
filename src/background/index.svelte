@@ -13,7 +13,7 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        background: radial-gradient(ellipse at center, #323b4c 0%, #1f2937 30%, #010203 85%);
+        background: var(--bg-gradient, radial-gradient(ellipse at center, #323b4c 0%, #1f2937 30%, #010203 85%));
         z-index: 0;
         pointer-events: none;
     }

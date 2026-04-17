@@ -7,10 +7,12 @@
     import About from './About.svelte';
     import Footer from './footer/index.svelte';
     import Unbound from './unbound.svelte';
+    import ThemeSwitcher from './ThemeSwitcher.svelte';
 
     let isDesktop = window.innerWidth >= 1024;
 </script>
 
+<ThemeSwitcher />
 <Background/>
 
 <main class="main-content">

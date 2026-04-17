@@ -109,9 +109,9 @@
         letter-spacing: 0.5em;
         margin-bottom: 2rem;
         font-size: 1.875rem;
-        color: white;
+        color: var(--heading-color);
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--border-color);
         max-width: 32rem;
         margin-left: auto;
         margin-right: auto;
@@ -132,9 +132,9 @@
         font-size: 0.875rem;
         padding: 0.5rem 1rem;
         border-radius: 1.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.05);
-        color: #d1d5db;
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        background: var(--card-bg);
+        color: var(--text-color);
         cursor: pointer;
         transition: all 0.3s ease;
         font-weight: 500;
@@ -142,15 +142,15 @@
     }
     
     .tag-filter:hover {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: rgba(255, 255, 255, 0.3);
-        color: white;
+        background: var(--tag-bg);
+        border-color: rgba(128, 128, 128, 0.6);
+        color: var(--heading-color);
     }
     
     .tag-filter.active {
-        background: rgba(255, 255, 255, 0.2);
-        border-color: white;
-        color: white;
+        background: rgba(128, 128, 128, 0.4);
+        border-color: var(--heading-color);
+        color: var(--heading-color);
     }
     
     .timeline {
@@ -166,7 +166,7 @@
         transform: translateX(-50%);
         width: 1px;
         height: 100%;
-        background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2), transparent);
+        background: linear-gradient(to bottom, transparent 0%, var(--border-color) 10%, var(--border-color) 90%, transparent 100%);
         top: 0;
     }
     
@@ -194,7 +194,7 @@
     .left h3 {
         font-size: 1.25rem;
         font-weight: 700;
-        color: white;
+        color: var(--heading-color);
         margin: 0 0 0.25rem 0;
     }
     
@@ -218,7 +218,7 @@
     }
     
     .company-link:hover h3 {
-        color: #bfdbfe;
+        color: var(--text-color);
     }
     
     .company-link:hover .external-icon {
@@ -227,7 +227,7 @@
     }
     
     .period {
-        color: #9ca3af;
+        color: var(--text-muted);
         font-size: 0.875rem;
         font-family: monospace;
         margin: 0;
@@ -240,23 +240,23 @@
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
-        background: #000;
-        border: 2px solid rgba(255, 255, 255, 0.3);
+        background: var(--bg-color);
+        border: 2px solid var(--border-color);
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 10;
         transition: all 0.3s;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(128, 128, 128, 0.1);
     }
     
     .timeline-item:hover .center-dot {
-        border-color: white;
+        border-color: var(--heading-color);
         transform: translateX(-50%) scale(1.1);
     }
     
     .icon {
-        color: #d1d5db;
+        color: var(--text-color);
         font-size: 0.75rem;
     }
     
@@ -268,12 +268,12 @@
     .right h4 {
         font-size: 1.125rem;
         font-weight: 500;
-        color: #e5e7eb;
+        color: var(--heading-color);
         margin: 0 0 0.5rem 0;
     }
     
     .description {
-        color: #9ca3af;
+        color: var(--text-muted);
         font-size: 0.875rem;
         line-height: 1.5;
         margin: 0;
@@ -290,9 +290,9 @@
         font-size: 0.8125rem;
         padding: 0.375rem 0.875rem;
         border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
+        border: 1px solid var(--border-color);
+        background: var(--card-bg);
+        color: var(--heading-color);
         text-decoration: none;
         transition: all 0.3s ease;
         font-weight: 500;
@@ -309,8 +309,8 @@
     }
     
     .experience-link:hover {
-        background: rgba(255, 255, 255, 0.2);
-        border-color: white;
+        background: var(--tag-bg);
+        border-color: var(--heading-color);
         transform: translateY(-2px);
     }
     

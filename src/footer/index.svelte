@@ -8,10 +8,9 @@
         padding: 2rem 0;
         text-align: center;
         font-size: 0.875rem;
-        color: #6b7280;
-        background: rgba(0, 0, 0, 0.2);
+        color: var(--date-color);
         backdrop-filter: blur(12px);
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        border-top: 1px solid var(--border-light);
         width: 100%;
     }
     
@@ -22,7 +21,7 @@
     .fuck-c00k1e-notices {
         margin-top: 1rem;
         font-size: 0.75rem;
-        color: #4b5563;
+        color: var(--text-muted);
         max-width: 480px;
         margin-left: auto;
         margin-right: auto;

@@ -59,7 +59,7 @@
     <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <mask id={`symbol-mask-${icon}`}>
-                <rect width="100" height="100" fill="red"  />
+                <rect width="100" height="100" fill="#333" />
                 <text
                     class="social"
                     x="50"
@@ -100,7 +100,7 @@
     }
 
     .social {
-        fill: whitesmoke;
+        fill: white;
         transition: all 0.3s ease;
         cursor: pointer;
         font-family: 'icons';
@@ -109,7 +109,7 @@
     }
 
     .circle {
-        fill: #9ca3af;
+        fill: var(--text-muted);
     }
 
     .circle:hover {

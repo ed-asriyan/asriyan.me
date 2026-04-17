@@ -50,9 +50,9 @@
         letter-spacing: 0.5em;
         margin-bottom: 4rem;
         font-size: 1.875rem;
-        color: white;
+        color: var(--heading-color);
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--border-color);
         max-width: 32rem;
         margin-left: auto;
         margin-right: auto;
@@ -68,8 +68,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
         border-radius: 0.75rem;
         padding: 1.5rem;
         text-decoration: none;
@@ -79,9 +79,9 @@
     }
     
     .card:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--tag-bg);
         transform: translateY(-4px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 30px rgba(128, 128, 128, 0.1);
     }
     
     .gradient-line {
@@ -90,7 +90,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background: linear-gradient(to right, #6b7280, white);
+        background: linear-gradient(to right, var(--text-muted), var(--heading-color));
         transform: scaleX(0);
         transition: transform 0.5s;
     }
@@ -109,41 +109,41 @@
     .icon-box {
         width: 3rem;
         height: 3rem;
-        background: rgba(255, 255, 255, 0.05);
+        background: var(--card-bg);
         border-radius: 0.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: monospace;
-        color: #9ca3af;
+        color: var(--text-muted);
         font-size: 1.2rem;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--border-color);
     }
     
     .external-link {
-        color: #6b7280;
+        color: var(--date-color);
         transition: color 0.2s;
     }
     
     .card:hover .external-link {
-        color: white;
+        color: var(--heading-color);
     }
     
     h3 {
         margin: 0 0 0.5rem 0;
         font-size: 1.25rem;
         font-weight: 700;
-        color: white;
+        color: var(--heading-color);
         transition: color 0.3s;
     }
     
     .card:hover h3 {
-        color: #bfdbfe;
+        color: var(--text-color);
     }
     
     .role {
         font-family: monospace;
-        color: #9ca3af;
+        color: var(--text-muted);
         font-size: 0.875rem;
         margin: 0 0 1rem 0;
         text-transform: uppercase;
@@ -153,7 +153,7 @@
     .description {
         margin: 0 0 1.5rem 0;
         font-size: 0.875rem;
-        color: #d1d5db;
+        color: var(--text-color);
         line-height: 1.5;
         flex-grow: 1;
         min-height: 60px;
@@ -168,11 +168,11 @@
     
     .tag {
         font-size: 0.75rem;
-        background: rgba(255, 255, 255, 0.05);
+        background: var(--tag-bg);
         padding: 0.25rem 0.75rem;
         border-radius: 1rem;
-        color: #d1d5db;
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        color: var(--tag-color);
+        border: 1px solid var(--border-light);
         font-weight: 500;
     }
     
