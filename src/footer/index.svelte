@@ -1,6 +1,9 @@
 <footer class="footer">
     <p class="copyright">© {new Date().getFullYear()} Ed Asriyan. All rights reserved.</p>
-    <p class="fuck-c00k1e-notices">This site uses cookies — a fundamental part of HTTP. Don't like it? You, and only you, are responsible for blocking them in your browser settings.</p>
+    <p class="fuck-c00k1e-notices">
+        This site uses cookies — a fundamental part of HTTP.
+        <br/>
+        Don't like it? Disable them in your browser settings.</p>
 </footer>
 
 <style>
