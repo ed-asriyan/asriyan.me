@@ -2,7 +2,7 @@ import { linear } from "svelte/easing";
 
 export const profile = {
     name: "Ed Asriyan",
-    title: "Director of Engineering at Parallels • Founder at AIGid",
+    title: "Director of Engineering at Parallels",
     subtitle: "Building scalable systems from Seattle, WA.",
     avatar: "https://github.com/ed-asriyan.png",
     email: "contact.website@asriyan.me"
