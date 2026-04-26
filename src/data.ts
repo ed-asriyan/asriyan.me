@@ -1,9 +1,16 @@
+import { linear } from "svelte/easing";
+
 export const profile = {
     name: "Ed Asriyan",
     title: "Director of Engineering at Parallels • Founder at AIGid",
     subtitle: "Building scalable systems from Seattle, WA.",
     avatar: "https://github.com/ed-asriyan.png",
     email: "contact.website@asriyan.me"
+};
+
+export const cv = {
+    text: "View CV",
+    link: "https://docs.google.com/document/d/1AQTa3h06nh1SPCIiaOcuwpuYtXBt1xJGz_16DlkTARs",
 };
 
 export const about = {

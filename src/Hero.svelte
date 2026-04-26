@@ -4,7 +4,7 @@
 
 <script lang="ts">
     import Social from './social.svelte';
-    import { profile, socialLinks } from './data';
+    import { profile, socialLinks, cv } from './data';
 </script>
 
 <header class="hero" id="about">
@@ -32,6 +32,22 @@
                 />
             {/each}
         </div>
+
+        <a
+            class="cv-button"
+            href={cv.link}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            {cv.text}
+        </a>
     </div>
     
     <div class="scroll-indicator">
@@ -114,8 +130,44 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
         max-width: 48rem;
+    }
+
+    .cv-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 9999px;
+        background: var(--card-bg);
+        color: var(--text-color);
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        text-transform: uppercase;
+        backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
+        margin-bottom: 3rem;
+    }
+
+    .cv-button svg {
+        width: 1em;
+        height: 1em;
+        flex-shrink: 0;
+    }
+
+    .cv-button:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.05);
+    }
+
+    :global([data-theme="light"]) .cv-button:hover {
+        border-color: rgba(0, 0, 0, 0.25);
+        background: rgba(0, 0, 0, 0.06);
     }
 
     .scroll-indicator {
