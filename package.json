@@ -20,7 +20,7 @@
 		"svelte-check": "^4.3.0",
 		"tslib": "^2.6.2",
 		"typescript": "^6.0.3",
-		"vite": "^6.4.2"
+		"vite": "^8.0.0"
 	},
 	"type": "module"
 }
