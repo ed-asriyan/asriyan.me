@@ -58,15 +58,15 @@ export const experience = [
     },
     { 
         company: "SimpleX Catalog",
-        companyLink: "https://simplex-directory.asriyan.me",
+        companyLink: "https://simplex-catalog.asriyan.me",
         position: "Author & Developer",
         period: "2024 - Present",
         description: "An open-source catalog of SimpleX servers and bots.",
         icon: "🚀",
         tags: ["Projects"],
         links: [
-            { text: "GitHub", link: "https://github.com/ed-asriyan/simplex-directory-frontend" },
-            { text: "Website", link: "https://simplex-directory.asriyan.me" }
+            { text: "GitHub", link: "https://github.com/ed-asriyan/simplex-catalog-frontend" },
+            { text: "Website", link: "https://simplex-catalog.asriyan.me" }
         ],
     },
     {
@@ -221,7 +221,7 @@ export const projects = [
         role: "Author & Developer",
         description: "An open-source catalog of SimpleX servers and bots.",
         tags: ["Svelte", "TypeScript", "Rust"],
-        link: "https://simplex-directory.asriyan.me",
+        link: "https://simplex-catalog.asriyan.me",
     },
     { 
         name: "Telegram Sticker to WhatsApp Transfer",
