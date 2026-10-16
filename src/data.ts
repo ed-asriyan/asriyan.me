@@ -23,7 +23,7 @@ export const about = {
 };
 
 export const socialLinks = [
-    { name: "SimpleX", icon: "simplex", href: "https://smp17.simplex.im/a#4fDJYxKMGNve_os7F-y4Fjt_gc0Ar5x3JHHdfH5k2IE" },
+    { name: "SimpleX", icon: "simplex", href: "https://smp1.asriyan.me/a#eVfz09ZLrRZi2wB6WTPdeF_IS3XfpM1TJBKQohdU_ZA?c=8zuLBiHd8jXk8_nUt9J62cRevt6cRqag4DToRDhySY8" },
     { name: "Telegram", icon: "telegram", href: "https://t.me/ed_asriyan" },
     { name: "LinkedIn", icon: "linkedin", href: "https://www.linkedin.com/in/ed-asriyan" },
     { name: "GitHub", icon: "github", href: "https://github.com/ed-asriyan" },
